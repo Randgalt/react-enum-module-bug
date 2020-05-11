@@ -1,0 +1,15 @@
+{
+  "name": "enum-bug-module",
+  "main": "index.ts",
+  "version": "1.0.0",
+  "types": "dist/index.d.ts",
+  "scripts": {
+      "compile": "npm run clean && tsc -p .",
+      "clean": "rm -rf dist",
+      "package": "npm run compile && npm pack"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.38",
+    "typescript": "^3.7.5"
+  }
+}
